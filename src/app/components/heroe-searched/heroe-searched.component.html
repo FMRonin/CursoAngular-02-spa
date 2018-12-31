@@ -1,0 +1,6 @@
+<h1>Héroes: {{termino}}</h1>
+<hr>
+<div class="card-columns">
+    <!--div class="card" *ngFor="let heroe of heroes; let i=index"-->
+    <app-heroe-cart [heroe]="heroe" [index]="heroe.idx" *ngFor="let heroe of heroes"></app-heroe-cart>
+</div>
